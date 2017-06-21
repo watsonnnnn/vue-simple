@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 1);
@@ -183,9 +183,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 new _vue2.default({
     el: 'body',
     components: {
-        'app': {
-            template: '<div>ddd</div>'
-        }
+        'app': _App2.default
     }
 });
 
@@ -7572,7 +7570,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\code\\vue-simple\\App.vue"
+Component.options.__file = "/Users/lumac/Projects/vue-simple/App.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] App.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -7635,7 +7633,7 @@ exports = module.exports = __webpack_require__(8)(true);
 
 
 // module
-exports.push([module.i, "\nbody {\n    background: #ccc\n}\n", "", {"version":3,"sources":["D:/code/vue-simple/App.vue"],"names":[],"mappings":";AACA;IACI,gBAAgB;CACnB","file":"App.vue","sourcesContent":["\nbody {\n    background: #ccc\n}\n"],"sourceRoot":""}]);
+exports.push([module.i, "\nbody {\n    background: #ccc\n}\n", "", {"version":3,"sources":["/Users/lumac/Projects/vue-simple/App.vue"],"names":[],"mappings":";AACA;IACI,gBAAgB;CACnB","file":"App.vue","sourcesContent":["\nbody {\n    background: #ccc\n}\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -8233,7 +8231,7 @@ var Component = __webpack_require__(0)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "D:\\code\\vue-simple\\components\\Menu.vue"
+Component.options.__file = "/Users/lumac/Projects/vue-simple/components/Menu.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Menu.vue: functional components are not supported with templates, they should use render functions.")}
 
