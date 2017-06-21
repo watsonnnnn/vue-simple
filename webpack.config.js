@@ -10,7 +10,8 @@ module.exports = {
     },
     output: {
         filename: "[name].js",
-        path: path.join(__dirname, '/dist/')
+        path: path.join(__dirname, '/dist/'),
+        publicPath: "/dist/"
     },
     module: {
         loaders: [
@@ -25,6 +26,11 @@ module.exports = {
                 loader:'url-loader?limit=8192'
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true,
+        hot: false,
+        inline: true,
     },
     plugins: [
         new webpack.LoaderOptionsPlugin({
