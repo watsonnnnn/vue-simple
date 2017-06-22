@@ -6,7 +6,7 @@
     </div>
 </template>
 <script>
-    import Menu from './components/Menu'
+    import Menu from '../components/Menu'
 
     export default{
         data(){
@@ -27,5 +27,8 @@
 <style>
     body {
         background: #ccc
+    }
+    h2:hover{
+        cursor: pointer;
     }
 </style>

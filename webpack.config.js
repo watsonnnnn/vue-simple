@@ -6,7 +6,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        index: './main.js'
+        index: './src/main.js'
     },
     output: {
         filename: "[name].js",
@@ -35,16 +35,14 @@ module.exports = {
     plugins: [
         new webpack.LoaderOptionsPlugin({
             options: {
-                vue: {
-                    loaders: {
-                        css: 'style-loader!css-loader?sourceMap'
-                    }
-                }
             }
         })
 
     ],
     resolve: {
         extensions: ['.js', '.jsx','.vue'],
+        alias: {
+            'vue$': 'vue/dist/vue'
+        }
     }
 }
