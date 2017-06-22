@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>welcome Vue</h1>
+        <h1>welcome</h1>
         <h2 @click="change">{{msg}}</h2>
         <my-menu></my-menu>
     </div>
@@ -11,7 +11,7 @@
     export default{
         data(){
             return {
-                msg: 'welcome Vue ^_^'
+                msg: 'welcome ^_^'
             }
         },
         methods: {
@@ -24,7 +24,7 @@
         }
     }
 </script>
-<style>
+<style scoped>
     body {
         background: #ccc
     }

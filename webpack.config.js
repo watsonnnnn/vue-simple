@@ -5,8 +5,10 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
+    devtool: 'source-map',
     entry: {
-        index: './src/main.js'
+        index: './src/main.js',
+        todo:'./src/todomain.js'
     },
     output: {
         filename: "[name].js",
@@ -31,6 +33,7 @@ module.exports = {
         historyApiFallback: true,
         hot: false,
         inline: true,
+        contentBase:'dist'//指定根目录
     },
     plugins: [
         new webpack.LoaderOptionsPlugin({
