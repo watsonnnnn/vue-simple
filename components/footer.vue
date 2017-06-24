@@ -15,13 +15,12 @@
         },
         methods:{
           clicktab(v,i){
-              console.log(v);
               this.activeindex = i;
+              this.$emit('setActive',v);
           }
         },
         props:['controlTabs'],
         created(){
-            console.log('created')
         }
     }
 </script>
