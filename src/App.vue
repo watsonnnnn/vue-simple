@@ -1,30 +1,19 @@
 <template>
     <div>
-        <h1>welcome</h1>
-        <h2 @click="change">{{msg}}</h2>
-        <my-menu></my-menu>
+        <Top></Top>
+        <router-view></router-view>
     </div>
 </template>
 <script>
-
+import Top from './components/header';
     export default{
-        data(){
-            return {
-                msg: 'welcome ^_^'
-            }
-        },
-        methods: {
-            change(){
-                this.msg = 'wahaha'
-            }
-        },
+        components:{
+            Top
+        }
     }
 </script>
 <style scoped>
     body {
         background: #ccc
-    }
-    h2:hover{
-        cursor: pointer;
     }
 </style>
