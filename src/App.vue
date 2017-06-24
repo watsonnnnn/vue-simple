@@ -6,7 +6,6 @@
     </div>
 </template>
 <script>
-    import Menu from '../components/Menu'
 
     export default{
         data(){
@@ -19,9 +18,6 @@
                 this.msg = 'wahaha'
             }
         },
-        components: {
-            'my-menu': Menu
-        }
     }
 </script>
 <style scoped>
