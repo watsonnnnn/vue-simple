@@ -6,8 +6,8 @@ const Bar = { template: '<div>bar</div>' }
 
 const routes = [
     { path: '/', component: {template:'<div></div>'}},
-    { path: '/foo', component: Foo },
-    { path: '/bar', component: Bar }
+    { path: '/login', component: Foo },
+    { path: '/register', component: Bar }
 ]
 
 export default routes;
