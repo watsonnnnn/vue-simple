@@ -18,7 +18,8 @@
   "homepage": "https://github.com/nicelj/vue-simple#readme",
   "dependencies": {
     "vue": "^2.1.0",
-    "vue-router": "^2.6.0"
+    "vue-router": "^2.6.0",
+    "vuex": "^2.3.1"
   },
   "devDependencies": {
     "babel": "^6.23.0",

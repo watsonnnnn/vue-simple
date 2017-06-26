@@ -1,15 +1,16 @@
 <template>
     <div>
-        <h2>welcome to vue.x.com</h2>
-        <p><router-link to="/login">login</router-link>&nbsp;<router-link to="/register">register</router-link></p>
-        <p><a @click="click">click</a></p>
+        <h2>welcome to vuejs.com</h2>
+        <p><router-link to="/login">login</router-link>&nbsp;<router-link to="/register">register</router-link>&nbsp;
+        <a style="text-decoration:underline" @click="click">click to detail</a></p>
+        <hr/>
     </div>
 </template>
 <script>
     export default {
         methods:{
             click(){
-                this.$router.push('/login')
+                this.$router.push({name:'humandetail',query:{id:2}})
             }
         }
     }
