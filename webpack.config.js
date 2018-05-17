@@ -3,7 +3,7 @@
  */
 var path = require('path');
 var webpack = require('webpack');
-
+// 直接在命令行中执行webpack时使用的是全局的webpack，要想使用node_modules中的webpack，要在scripts中执行命令。
 module.exports = {
     devtool: 'source-map',
     entry: {
@@ -13,7 +13,7 @@ module.exports = {
     output: {
         filename: "[name].js",
         path: path.join(__dirname, '/dist/'),
-        publicPath: "/dist/"
+        publicPath: "/"
     },
     module: {
         loaders: [
@@ -33,7 +33,7 @@ module.exports = {
         historyApiFallback: true,
         hot: false,
         inline: true,
-        contentBase:'dist'//指定根目录
+        contentBase:'./dist'//指定根目录
     },
     plugins: [
         new webpack.LoaderOptionsPlugin({
