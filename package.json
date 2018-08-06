@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/nicelj/vue-simple#readme",
   "dependencies": {
+    "ant-design-vue": "^1.0.2",
     "vue": "^2.1.0",
     "vue-router": "^2.6.0"
   },
@@ -30,8 +31,10 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.23.0",
-    "css-loader": "^0.28.4",
+    "css-loader": "^0.28.11",
     "file-loader": "^0.11.2",
+    "less": "^3.8.0",
+    "less-loader": "^4.1.0",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "vue-hot-reload-api": "^2.1.0",

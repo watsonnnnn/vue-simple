@@ -24,6 +24,27 @@ module.exports = {
                 test:/\.vue$/,loader:'vue-loader'
             },
             {
+                test:/\.css$/,
+                loaders:['style-loader','css-loader']
+            },
+            {
+                test:/\.less$/,
+                use:[{
+                    loader: 'style-loader'
+                  }, {
+                    loader: 'css-loader'
+                  }, {
+                    loader: 'less-loader', 
+                    options: {
+                      javascriptEnabled: true,
+                      modifyVars: {
+                        '@primary-color': '#00cec9'
+                      }
+                    }
+                  }],
+                // options: { javascriptEnabled: true }
+            },
+            {
                 test: /\.(png|jpg|gif)$/,
                 loader:'url-loader?limit=8192'
             }

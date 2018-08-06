@@ -3,6 +3,7 @@
         <h1>welcome</h1>
         <h2 @click="change">{{msg}}</h2>
         <my-menu></my-menu>
+        <a-button type="primary">Primary</a-button>
     </div>
 </template>
 <script>
